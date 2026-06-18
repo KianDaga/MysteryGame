@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystery Island: Atmosphere Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="phase-party">
+    <div class="atmosphere" aria-hidden="true">
+      <div class="sunset-glow"></div>
+      <div class="ocean-shimmer"></div>
+      <div class="party-lights"></div>
+      <div class="rain-layer"></div>
+      <div class="lightning-flash"></div>
+      <div class="warning-sweep"></div>
+      <div class="blood-trail"></div>
+      <div class="surveillance-glitch"></div>
+    </div>
+
+    <main class="villa-shell">
+      <section class="hero-card scene-reveal" aria-labelledby="game-title">
+        <p class="eyebrow">Private Island · Midnight Guest List</p>
+        <h1 id="game-title">Mystery Island</h1>
+        <p class="tagline">
+          A glass villa celebration begins in champagne sunlight, then turns darker with every death and clue.
+        </p>
+        <div class="status-grid" aria-label="Current atmosphere status">
+          <article>
+            <span>Lighting</span>
+            <strong id="lightingStatus">Sunset gold</strong>
+          </article>
+          <article>
+            <span>Weather</span>
+            <strong id="weatherStatus">Warm ocean breeze</strong>
+          </article>
+          <article>
+            <span>Sound cue</span>
+            <strong id="audioStatus">Poolside deep house</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-panel glass-panel" aria-labelledby="story-title">
+        <div>
+          <p class="eyebrow">Story event control</p>
+          <h2 id="story-title">Escalate the night</h2>
+          <p id="sceneText">
+            Guests arrive by speedboat beneath coral clouds. Gold lanterns glitter on the infinity pool and the villa glass glows like a jewel.
+          </p>
+        </div>
+        <div class="event-buttons" aria-label="Trigger story events">
+          <button data-phase="clue">Major clue found</button>
+          <button data-phase="death">First death</button>
+          <button data-phase="storm">Storm locks down island</button>
+          <button data-phase="finale">Final reveal</button>
+          <button data-phase="party" class="ghost">Reset party</button>
+        </div>
+      </section>
+
+      <section class="event-timeline glass-panel" aria-labelledby="timeline-title">
+        <h2 id="timeline-title">Atmosphere arc</h2>
+        <ol>
+          <li><strong>Party:</strong> sunset gradients, ocean ambience, gold accents, moving party lights.</li>
+          <li><strong>Major clue:</strong> villa lights dim, surveillance glitch briefly interrupts the polished UI.</li>
+          <li><strong>Death:</strong> red warning lights sweep across glass, blood-drip transition marks the scene change.</li>
+          <li><strong>Storm:</strong> rain and lightning arrive once the island is cut off.</li>
+          <li><strong>Final reveal:</strong> flickering power, crimson pool reflections, and tense music prompts dominate.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
