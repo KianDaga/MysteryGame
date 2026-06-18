@@ -1,0 +1,12 @@
+{
+  "name": "mystery-game",
+  "version": "0.1.0",
+  "description": "Interactive mystery game systems.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
